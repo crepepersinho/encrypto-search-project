@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="icon" href="loupe.svg">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSQKM01MV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4TSQKM01MV');
+</script>
+<body>
+    <form>
+        <h3>login</h3>
+        <input type="text" placeholder="login" id="login" class="login">
+        <input type="password" placeholder="senha" id="senha" class="login">
+        <input type="submit" onclick="logar(); return false" class="login">
+    </form>
+
+    <script type="text/javascript">
+        function logar() {
+
+var loginv = document.getElementById("login").value;
+var senhav = document.getElementById("senha").value;
+
+if(loginv == "Gabriel geovanni" && senhav == "vasilha45#") {
+    location.href = "dev-dashboard.html"
+}
+}
+    </script>
+</body>
+</html>
